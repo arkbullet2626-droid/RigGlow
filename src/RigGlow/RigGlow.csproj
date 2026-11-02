@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <AssemblyName>RigGlow</AssemblyName>
+    <RootNamespace>RigGlow</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets\RigGlow.ico</ApplicationIcon>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <PlatformTarget>x64</PlatformTarget>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <DebugType>embedded</DebugType>
+
+    <!-- Version is overridden by build.bat / the release workflow (-p:Version=x.y.z) -->
+    <Version>1.0.0</Version>
+    <Product>RigGlow</Product>
+    <AssemblyTitle>RigGlow</AssemblyTitle>
+    <Company>Opifex Studios</Company>
+    <Authors>Opifex Studios</Authors>
+    <Copyright>© 2026 Opifex Studios. MIT licence.</Copyright>
+    <Description>Free, open-source RGB lighting and fan control for Windows.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Open-source sensor + fan-control library (MPL-2.0). Uses the PawnIO driver. -->
+    <PackageReference Include="LibreHardwareMonitorLib" Version="0.9.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE" Link="LICENSE.txt" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <None Include="..\..\THIRD-PARTY-NOTICES.md" Link="THIRD-PARTY-NOTICES.txt" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

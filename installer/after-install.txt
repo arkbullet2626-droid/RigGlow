@@ -1,0 +1,19 @@
+You're almost done!
+
+When RigGlow opens:
+
+  1. Go to "Setup check". It shows anything missing (OpenRGB,
+     PawnIO) or anything that might fight RigGlow, with links.
+
+  2. On the Lighting page, under "ARGB header LED count", set how
+     many LEDs are on each fan header and use the test pattern to
+     check it.
+
+  3. On the Fans page, pick a fan header and choose a fixed speed
+     or a temperature curve. Headers stay under motherboard control
+     until you change them.
+
+RigGlow lives in the system tray (near the clock). Right-click its
+icon to exit; your fans then go back to motherboard control.
+
+Problems or ideas: https://github.com/arkbullet2626-droid/RigGlow/issues

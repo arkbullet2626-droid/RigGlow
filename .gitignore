@@ -1,0 +1,12 @@
+bin/
+obj/
+publish/
+release/
+dist/
+.vs/
+*.user
+build.log
+publish-to-github.bat
+_workflows/
+publish-now.bat
+publish.log

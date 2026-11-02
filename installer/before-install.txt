@@ -1,0 +1,19 @@
+RigGlow - free RGB lighting and fan control for Windows
+by Opifex Studios
+
+What you'll need (both free):
+
+  * OpenRGB 1.0 or newer - https://openrgb.org
+    RigGlow uses it in the background to talk to RGB hardware.
+
+  * PawnIO driver - https://pawnio.eu
+    Needed for fan control and for RAM lighting.
+    (OpenRGB 1.0 offers to install it for you.)
+
+Before you install, quit any other RGB or fan-control apps
+(SignalRGB, Corsair iCUE, ASUS Armoury Crate, MSI Center, ...).
+Two apps controlling the same hardware will fight over it.
+
+RigGlow runs as administrator because talking to the motherboard's
+fan chip requires it. It doesn't go online except to check GitHub
+for new versions (you can turn that off).
